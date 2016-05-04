@@ -113,3 +113,58 @@
 .button--block + .button--block {
   margin-top: 5px;
 }
+
+.btn{
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+.btn-primary{
+  color: $quaternary-color;
+  font-family: 'Open Sans', sans-serif;
+  background-color: $secundary-color;
+  border: 0;
+  margin: 0 8px;
+  @include font-size(16px);
+  transition: 0.7s;
+  &:hover{
+    background-color: $btn-hover-color;
+  }
+}
+
+.btn-secundary{
+  color: $quaternary-color;
+  font-family: 'Open Sans', sans-serif;
+  background-color: $secundary-background-color;
+  border: 1px solid $secundary-color;
+  margin: 0 8px;
+  @include font-size(12px);
+  transition: 0.7s;
+  &:hover{
+    background-color: $font-icon-color;
+  }
+}
+
+
+.btn-lg{
+  padding: 10px 16px;
+  line-height: 1.3333;
+  border-radius: 6px;
+}

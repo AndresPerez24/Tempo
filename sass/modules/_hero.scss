@@ -1,0 +1,25 @@
+.hero{
+	background: url("../../img/header-bg.jpg") no-repeat;
+	background-size: cover;
+	padding: 5em 0 10.8571em;
+	text-align: center;
+	margin-top: -70px;
+	&__title{
+		@include font-size(60px);
+		color: $tertiary-color;
+		letter-spacing: 2px;
+		text-transform: uppercase;
+		font-weight: 500;
+		margin-bottom: 0;
+		padding-top: 150px;
+	}
+	&__title--color{
+		color: $secundary-color;
+	}
+	&__legend{
+		@include font-size(20px);
+		text-transform: uppercase;
+		color: $tertiary-color;
+		margin-bottom: 100px;
+	}
+}

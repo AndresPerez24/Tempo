@@ -1,0 +1,35 @@
+.header{
+	height: 50px;
+	z-index: 99;
+	&__icon{
+		@include font-size(20px);
+		color: $secundary-color;
+	}
+	&__icon-name{
+		@include font-size(20px);
+		color: $tertiary-color;
+		font-weight: 600;
+		letter-spacing: 1px;
+		position: absolute;
+		padding: 10px 10px;
+		&:hover {
+			color: $primary-color;
+		}
+	}
+}
+
+.main-nav{
+	float: right;
+	&__item{
+		display: inline-block;
+		@include font-size(10px);
+		margin-right: 30px;
+	}
+	&__link{
+		color: $tertiary-color;
+		transition: 0.5s;
+		&:hover{
+			color: $secundary-color;
+		}
+	}
+}

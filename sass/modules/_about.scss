@@ -1,0 +1,51 @@
+.about{
+	background-color: $primary-background-color;
+	color: $quinternary-color;
+	padding-bottom: 60px;
+	&__title{
+		color: $quinternary-color;
+		margin: 0;
+		padding-top: 100px;
+		text-align: center;
+		&:after{
+			content: "";
+			display: block;
+			border: 1px solid $btn-hover-color;
+			width: 60px;
+			margin: 30px auto;
+		}
+	}
+	&__title--bold{
+		font-weight: bold;
+	}
+	&__legend{
+		text-align: center;
+		@include font-size(12px);
+	}
+	&__sub-title{
+		color: $quinternary-color;
+	}
+	&__description{
+		@include font-size(12px);
+	}
+	&__list-float-left{
+		float: left;
+		@include font-size(12px);
+		list-style: none;
+	}
+
+	&__list-float-right{
+		margin-right: 70px;
+		list-style: none;
+		float: right;
+		@include font-size(12px);
+	}
+	&__list-item{
+		margin-top: 5px;
+		&:before{
+		  content: "✓";
+		  color: #f3ca27;
+		  padding-right: 5px;
+		}
+	}
+}

@@ -29,6 +29,14 @@
 @import "modules/main-footer";
 @import "modules/main-header";
 @import "modules/main-navigation";
+@import "modules/block";
+@import "modules/header.scss";
+@import "modules/hero.scss";
+@import "modules/service.scss";
+@import "modules/portfolio.scss";
+@import "modules/about.scss";
+@import "modules/team.scss";
+@import "modules/testimonials.scss";
 
 // Helpers
 @import "helpers/font-icons-helpers";

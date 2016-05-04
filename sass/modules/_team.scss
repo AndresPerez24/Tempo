@@ -1,0 +1,50 @@
+.team{
+	background-color: $secundary-background-color;
+	text-align: center;
+	color: $quaternary-color;
+	padding-bottom: 80px;
+	&__title{
+		margin: 0;
+		color: $quaternary-color;
+		padding-top: 100px;
+		&:after{
+			content: "";
+			display: block;
+			border: 1px solid $btn-hover-color;
+			width: 60px;
+			margin: 30px auto;
+		}
+	}
+		&__title--bold{
+		font-weight: bold;
+	}
+	&__legend{
+		@include font-size(12px);
+	}
+	&__img{
+		border-radius: 50%;
+		height: 120px;
+	}
+	&__name{
+		color: $quaternary-color;
+		@include font-size(13px);
+		font-weight: bold;
+	}
+	&__career{
+		@include font-size(11px);
+	}
+	&__list{
+		margin-right: 40px;
+	}
+	&__list-item{
+		display: inline-block;
+		margin-right: 5px;
+	}
+	&__icon{
+		color: $font-icon-color;
+		transition: 0.6s;
+		&:hover{
+			color: $primary-background-color;
+		}
+	}
+}
