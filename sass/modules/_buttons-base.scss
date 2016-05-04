@@ -154,8 +154,9 @@
   font-family: 'Open Sans', sans-serif;
   background-color: $secundary-background-color;
   border: 1px solid $secundary-color;
-  margin: 0 8px;
+  margin: 10px 8px 0 0;
   @include font-size(12px);
+
   transition: 0.7s;
   &:hover{
     background-color: $font-icon-color;
@@ -172,6 +173,20 @@
   transition: 0.7s;
   &:hover{
     background-color: $primary-color;
+  }
+}
+
+.btn-modal{
+  color: $quinternary-color;
+  font-family: 'Open Sans', sans-serif;
+  background-color: $primary-background-color;
+  border: 1px solid ;
+  margin: 0 8px;
+  @include font-size(13px);
+  transition: 0.7s;
+  &:hover{
+    color: $quinternary-color;
+    background-color: $background-color-icon;
   }
 }
 

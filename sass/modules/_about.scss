@@ -32,6 +32,9 @@
 		float: left;
 		@include font-size(12px);
 		list-style: none;
+		@media (max-width: 518px){
+			margin-left: -40px;
+    	}	 
 	}
 
 	&__list-float-right{
@@ -39,6 +42,9 @@
 		list-style: none;
 		float: right;
 		@include font-size(12px);
+		@media (max-width: 518px){
+			  margin-right: -4px;
+    	}
 	}
 	&__list-item{
 		margin-top: 5px;

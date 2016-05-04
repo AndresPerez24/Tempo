@@ -4,6 +4,9 @@
 	padding: 5em 0 10.8571em;
 	text-align: center;
 	margin-top: -70px;
+	&__content{
+		margin: 0 5%;
+	}
 	&__title{
 		@include font-size(60px);
 		color: $tertiary-color;

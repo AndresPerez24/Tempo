@@ -13,17 +13,37 @@
 		position: absolute;
 		padding: 10px 10px;
 		&:hover {
-			color: $primary-color;
+			color: $tertiary-color;
 		}
 	}
 }
 
 .main-nav{
-	float: right;
+	  float: right;
+	  transition: right 0.3s;
+	  @media (max-width: 800px){
+	    position: fixed;
+	    top: 0;
+	    bottom: 0;
+	    right: -200px;
+	    z-index: 99;
+	    background-color: rgba(0, 0, 0, 0.6);
+	    margin: 0;
+	    padding: 0;
+	    text-align: center;
+	    width: 200px;
+	   }
+	   &--expanded{
+    		right: 0;
+    	}
 	&__item{
 		display: inline-block;
 		@include font-size(10px);
 		margin-right: 30px;
+		@media (max-width: 800px){
+		    display: block;
+		    margin: 40px auto;
+    }
 	}
 	&__link{
 		color: $tertiary-color;
@@ -32,4 +52,16 @@
 			color: $secundary-color;
 		}
 	}
+	&__button{
+	    cursor: pointer;
+	    float: right;
+	    display: none;
+	   	color: $secundary-color;
+	    padding-top: 10px;
+	    outline: none;
+	    @include font-size(20px);
+	    @media (max-width: 800px){
+	      display: initial;
+    }
+  }
 }

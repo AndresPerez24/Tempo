@@ -1,0 +1,50 @@
+.modal{
+	position: fixed;
+	z-index: 99;
+	background-color: $secundary-background-color;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	padding: 5rem 5%;
+	overflow: auto;
+	visibility: hidden;
+	transition: 0.7s;
+	&:target{
+		visibility: visible;
+	}
+	 &__close {
+		position: absolute;
+		top: 10px;
+		right: 15px;
+		@include font-size(50px);
+		cursor: pointer;
+		transition: 0.7s;
+		&:hover{
+			color: $quinternary-color;
+		}
+	}
+}
+ .content{
+ 	color: $quaternary-color;
+ 	&__title{
+		color: $quaternary-color;
+		@include font-size(32px);
+ 	}
+ 	&__legend{
+		@include font-size(12px);
+ 	}
+ 	&__description{
+ 		max-width: 700px;
+		width: 100%;
+		margin: 40px auto;
+		@include font-size(12px);
+ 	}
+ 	&__client{
+
+ 		@include font-size(12px);
+ 	}
+ 	&__client--weithg{
+ 		font-weight: bold;
+ 	}
+ }
