@@ -162,6 +162,19 @@
   }
 }
 
+.btn-contact{
+  color: $primary-color;
+  font-family: 'Open Sans', sans-serif;
+  background-color: $secundary-background-color;
+  border: 1px solid $primary-color;
+  margin: 0 8px;
+  @include font-size(13px);
+  transition: 0.7s;
+  &:hover{
+    background-color: $primary-color;
+  }
+}
+
 
 .btn-lg{
   padding: 10px 16px;

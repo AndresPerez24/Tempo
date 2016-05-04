@@ -1,0 +1,51 @@
+.contact{
+	background-color: $secundary-background-color;
+	text-align: center;
+	color: $quaternary-color;
+	padding-bottom: 30px;
+	&__main-title{
+		margin: 0;
+		color: $quaternary-color;
+		padding-top: 100px;
+		&:after{
+			content: "";
+			display: block;
+			border: 1px solid $btn-hover-color;
+			width: 60px;
+			margin: 30px auto;
+		}
+	}
+	&__main-title--weigth{
+		font-weight: bold;
+	}
+	&__legend{
+		@include font-size(12px);
+	}
+	&__icon{
+		display: block;
+		color: $font-icon-color;
+		@include font-size(25px);
+	}
+	&__social-description{
+		@include font-size(12px);
+		display: block;
+	}
+	&__sub-title{
+		color: $quaternary-color;
+		@include font-size(18px);
+	}
+	&__list-social-item{
+		margin-top: 70px;
+		display: inline-block;
+	}
+	&__list-social-icon{
+		color: $font-icon-color;
+		transition: 0.7s;
+		margin-right: 35px;
+		@include font-size(20px);
+		&:hover{
+			color: $quaternary-color;
+		}
+	}
+
+}
