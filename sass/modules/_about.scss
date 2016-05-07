@@ -33,7 +33,7 @@
 		@include font-size(12px);
 		list-style: none;
 		@media (max-width: 518px){
-			margin-left: -40px;
+			margin-left: -45px;
     	}	 
 	}
 
@@ -43,7 +43,7 @@
 		float: right;
 		@include font-size(12px);
 		@media (max-width: 518px){
-			  margin-right: -4px;
+			  margin-right: -14px;
     	}
 	}
 	&__list-item{

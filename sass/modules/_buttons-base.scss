@@ -144,6 +144,7 @@
   margin: 0 8px;
   @include font-size(16px);
   transition: 0.7s;
+  outline: none;
   &:hover{
     background-color: $btn-hover-color;
   }
@@ -156,7 +157,7 @@
   border: 1px solid $secundary-color;
   margin: 10px 8px 0 0;
   @include font-size(12px);
-
+  outline: none;
   transition: 0.7s;
   &:hover{
     background-color: $font-icon-color;
@@ -169,10 +170,12 @@
   background-color: $secundary-background-color;
   border: 1px solid $primary-color;
   margin: 0 8px;
+  outline: none;
   @include font-size(13px);
   transition: 0.7s;
   &:hover{
     background-color: $primary-color;
+    color: $quaternary-color;
   }
 }
 
@@ -184,6 +187,7 @@
   margin: 0 8px;
   @include font-size(13px);
   transition: 0.7s;
+  outline: none;
   &:hover{
     color: $quinternary-color;
     background-color: $background-color-icon;
